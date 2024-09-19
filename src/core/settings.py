@@ -95,7 +95,7 @@ if DEBUG:
     INSTALLED_APPS.append('django_browser_reload')
     MIDDLEWARE.append("django_browser_reload.middleware.BrowserReloadMiddleware")
 
-ROOT_URLCONF = "cfehome.urls"
+ROOT_URLCONF = "core.urls"
 
 TEMPLATES = [
     {
@@ -115,7 +115,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "cfehome.wsgi.application"
+WSGI_APPLICATION = "core.wsgi.application"
 
 
 # Database
@@ -179,4 +179,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # cloudinary video config
 CLOUDINARY_CLOUD_NAME = config("CLOUDINARY_CLOUD_NAME", default="")
 CLOUDINARY_PUBLIC_API_KEY = config("CLOUDINARY_PUBLIC_API_KEY", default="")
-CLOUDINARY_SECRET_API_KEY= config("CLOUDINARY_SECRET_API_KEY")
+#CLOUDINARY_SECRET_API_KEY= config("CLOUDINARY_SECRET_API_KEY")
+
+CLOUDINARY_SECRET_API_KEY= 'dad'

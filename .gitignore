@@ -1,3 +1,7 @@
+
+_venv/
+resources/
+
 .DS_Store
 local-cdn/media/
 
