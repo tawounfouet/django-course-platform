@@ -65,7 +65,8 @@ class Course(models.Model):
     description = models.TextField(blank=True, null=True)
     # uuid = models.UUIDField(default=uuid.uuid1, unique=True)
     public_id = models.CharField(max_length=130, blank=True, null=True, db_index=True)
-    # image = models.ImageField(upload_to=handle_upload, blank=True, null=True)
+    #image = models.ImageField(upload_to=handle_upload, blank=True, null=True)
+    
     image = CloudinaryField(
         "image", 
         null=True, 

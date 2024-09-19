@@ -5,6 +5,16 @@ CLOUDINARY_CLOUD_NAME = settings.CLOUDINARY_CLOUD_NAME
 CLOUDINARY_PUBLIC_API_KEY = settings.CLOUDINARY_PUBLIC_API_KEY
 CLOUDINARY_SECRET_API_KEY= settings.CLOUDINARY_SECRET_API_KEY
 
+# Configuration       
+# cloudinary.config( 
+#     cloud_name = "dsz3haz29", 
+#     api_key = "your_api_key", 
+#     api_secret = "<your_api_secret>", # Click 'View API Keys' above to copy your API secret
+#     secure=True
+# )
+
+
+
 def cloudinary_init():   
     cloudinary.config( 
         cloud_name = CLOUDINARY_CLOUD_NAME, 
